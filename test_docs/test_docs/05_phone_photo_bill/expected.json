@@ -1,0 +1,18 @@
+{
+  "description": "One-page bill photographed at an angle with blur, noise, uneven light, JPEG q40. Same values as case 01.",
+  "needs_human_review": false,
+  "expected_flags": [],
+  "informational": false,
+  "files": {
+    "hospital_bill_photo.jpg": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "hospital_name": "Lakeview Multispeciality Hospital (SAMPLE)",
+        "patient_name": "Anil Deshmukh",
+        "bill_number": "LMH-2026-018834",
+        "bill_date": "2026-10-15",
+        "total_amount": "107450"
+      }
+    }
+  }
+}

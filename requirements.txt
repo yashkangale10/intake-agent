@@ -1,0 +1,13 @@
+langgraph>=1.0
+langchain>=1.0
+# install the one provider package matching INTAKE_MODEL (must be vision-capable):
+langchain-google-genai     # google_genai:gemini-2.5-flash (the tested path)
+# langchain-anthropic      # anthropic:... (default INTAKE_MODEL; not yet run end to end)
+# langchain-openai
+pydantic>=2
+pillow
+# poppler-utils            # system package; provides pdftoppm to rasterise PDF pages
+# --- offline test double only (not needed in production) ---
+pytesseract                # + tesseract binary
+
+numpy                      # make_test_docs.py only (also uses Linux font paths)

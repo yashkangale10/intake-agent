@@ -1,0 +1,15 @@
+{
+  "description": "Jittered oblique 'handwriting' (synthetic; real handwriting is harder).",
+  "needs_human_review": false,
+  "expected_flags": [],
+  "informational": false,
+  "files": {
+    "prescription.png": {
+      "doc_type": "prescription",
+      "fields": {
+        "patient_name": "Anil Deshmukh",
+        "doctor_name": "Meera Kulkarni"
+      }
+    }
+  }
+}

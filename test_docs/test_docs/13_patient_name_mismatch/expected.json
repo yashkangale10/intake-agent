@@ -1,0 +1,22 @@
+{
+  "description": "Claim form says Anil Deshmukh, the bill is for Sunita Joshi. Expect PATIENT_NAME_MISMATCH and review.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "PATIENT_NAME_MISMATCH"
+  ],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "patient_name": "Anil Deshmukh"
+      }
+    },
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "patient_name": "Sunita Joshi"
+      }
+    }
+  }
+}

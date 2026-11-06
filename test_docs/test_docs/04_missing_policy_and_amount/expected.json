@@ -1,0 +1,19 @@
+{
+  "description": "Policy Number and Claim Amount boxes are blank. Model must return null (NOT invent). Expect MISSING_REQUIRED x2.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "MISSING_REQUIRED"
+  ],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "patient_name": "Anil Deshmukh",
+        "date_of_claim": "2026-10-20",
+        "policy_number": null,
+        "claim_amount": null
+      }
+    }
+  }
+}

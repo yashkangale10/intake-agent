@@ -1,0 +1,45 @@
+{
+  "description": "Baseline: consistent claim form + 2-page bill + discharge summary. Indian digit grouping (1,07,450), dd/mm/yyyy dates.",
+  "needs_human_review": false,
+  "expected_flags": [],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "policy_number": "SAMP-HLT-2026-004521",
+        "patient_name": "Anil Deshmukh",
+        "claim_amount": "107450",
+        "date_of_claim": "2026-10-20",
+        "hospital_name": "Lakeview Multispeciality Hospital (SAMPLE)",
+        "admission_date": "2026-10-12",
+        "discharge_date": "2026-10-15",
+        "diagnosis": "Acute appendicitis"
+      }
+    },
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "hospital_name": "Lakeview Multispeciality Hospital (SAMPLE)",
+        "patient_name": "Anil Deshmukh",
+        "bill_number": "LMH-2026-018834",
+        "bill_date": "2026-10-15",
+        "total_amount": "107450",
+        "policy_number": "SAMP-HLT-2026-004521",
+        "admission_date": "2026-10-12",
+        "discharge_date": "2026-10-15"
+      }
+    },
+    "discharge_summary.png": {
+      "doc_type": "discharge_summary",
+      "fields": {
+        "patient_name": "Anil Deshmukh",
+        "hospital_name": "Lakeview Multispeciality Hospital (SAMPLE)",
+        "admission_date": "2026-10-12",
+        "discharge_date": "2026-10-15",
+        "diagnosis": "Acute appendicitis",
+        "doctor_name": "Meera Kulkarni"
+      }
+    }
+  }
+}
