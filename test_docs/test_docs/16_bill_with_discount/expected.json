@@ -1,0 +1,22 @@
+{
+  "description": "Sub Total 1,07,450 less Discount 5,000 = Total 1,02,450, and the claim is for 1,02,450. A legitimate discount must NOT be flagged.",
+  "needs_human_review": false,
+  "expected_flags": [],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "claim_amount": "102450"
+      }
+    },
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "line_items_total": "107450",
+        "discount_amount": "5000",
+        "total_amount": "102450"
+      }
+    }
+  }
+}

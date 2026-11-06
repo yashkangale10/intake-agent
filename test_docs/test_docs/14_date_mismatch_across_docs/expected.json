@@ -1,0 +1,22 @@
+{
+  "description": "Claim form says discharged 15/10/2026, discharge summary says 16/10/2026. Expect DATE_MISMATCH and review.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "DATE_MISMATCH"
+  ],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "discharge_date": "2026-10-15"
+      }
+    },
+    "discharge_summary.png": {
+      "doc_type": "discharge_summary",
+      "fields": {
+        "discharge_date": "2026-10-16"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Bill (2 pages) + discharge summary (1 page) bundled in ONE file. Splitting is not built yet, so the agent must at least warn (MULTI_DOCUMENT_SUSPECTED) and send it to review.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "MULTI_DOCUMENT_SUSPECTED"
+  ],
+  "informational": false,
+  "files": {
+    "claim_bundle.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "bill_number": "LMH-2026-018834",
+        "total_amount": "107450"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Bill is Rs 5,00,000 but only Rs 2,00,000 is claimed (e.g. sum-insured cap). Must NOT raise an error or review; only an info PARTIAL_CLAIM note.",
+  "needs_human_review": false,
+  "expected_flags": [
+    "PARTIAL_CLAIM"
+  ],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "claim_amount": "200000",
+        "patient_name": "Anil Deshmukh"
+      }
+    },
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "total_amount": "500000",
+        "line_items_total": "500000"
+      }
+    }
+  }
+}

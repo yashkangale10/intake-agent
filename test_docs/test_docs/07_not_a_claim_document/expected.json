@@ -1,0 +1,14 @@
+{
+  "description": "Grocery receipt. Expect doc_type 'unknown', UNKNOWN_DOC_TYPE, human review.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "UNKNOWN_DOC_TYPE"
+  ],
+  "informational": false,
+  "files": {
+    "grocery_receipt.png": {
+      "doc_type": "unknown",
+      "fields": {}
+    }
+  }
+}

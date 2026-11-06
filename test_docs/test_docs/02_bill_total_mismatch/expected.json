@@ -1,0 +1,18 @@
+{
+  "description": "Printed 'Total Amount' is Rs 3,000 higher than 'Sub Total'. Expect TOTAL_MISMATCH and human review.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "TOTAL_MISMATCH"
+  ],
+  "informational": false,
+  "files": {
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "bill_number": "LMH-2026-018834",
+        "total_amount": "110450",
+        "line_items_total": "107450"
+      }
+    }
+  }
+}

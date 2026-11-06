@@ -1,0 +1,22 @@
+{
+  "description": "Claims Rs 6,00,000 against a Rs 5,00,000 bill. Expect CLAIM_EXCEEDS_BILL and review.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "CLAIM_EXCEEDS_BILL"
+  ],
+  "informational": false,
+  "files": {
+    "claim_form.png": {
+      "doc_type": "claim_form",
+      "fields": {
+        "claim_amount": "600000"
+      }
+    },
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "total_amount": "500000"
+      }
+    }
+  }
+}

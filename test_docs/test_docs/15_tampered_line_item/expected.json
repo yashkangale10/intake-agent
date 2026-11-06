@@ -1,0 +1,18 @@
+{
+  "description": "Room charges row prints 3 x 4,500 = 18,500 (should be 13,500). Printed sub-total still 1,07,450. The model must copy 18,500 as printed (not silently fix it); code then flags LINE_AMOUNT_MISMATCH and LINE_ITEMS_SUM_MISMATCH.",
+  "needs_human_review": true,
+  "expected_flags": [
+    "LINE_AMOUNT_MISMATCH",
+    "LINE_ITEMS_SUM_MISMATCH"
+  ],
+  "informational": false,
+  "files": {
+    "hospital_bill.pdf": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "line_items_total": "107450",
+        "total_amount": "107450"
+      }
+    }
+  }
+}

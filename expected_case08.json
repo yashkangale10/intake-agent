@@ -1,0 +1,17 @@
+{
+  "description": "Bilingual Marathi/English labels; hospital name printed in Marathi only. All required fields are present, so no flags expected.",
+  "needs_human_review": false,
+  "expected_flags": [],
+  "informational": false,
+  "files": {
+    "bill_marathi.png": {
+      "doc_type": "hospital_bill",
+      "fields": {
+        "patient_name": "Anil Deshmukh",
+        "bill_number": "LMH-2026-018834",
+        "bill_date": "2026-10-15",
+        "total_amount": "107450"
+      }
+    }
+  }
+}
